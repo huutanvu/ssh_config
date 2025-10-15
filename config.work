@@ -1,0 +1,143 @@
+Host utility
+    HostName hddc-utility-content.v1013.molecularhealth.net
+    User tvu
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host hana-service
+    HostName hddc-services-dev.v1003.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host import-dev
+    HostName hddc-import-dev.v1003.molecularhealth.net
+    User psrun-dev
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host mapper-dev
+    HostName hddc-mapper-dev.v1003.molecularhealth.net
+    User psrun-dev
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host upload-dev
+    HostName hddc-upload-dev.v1003.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host upload-qa
+    HostName hddc-upload-qa.v1002.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host services-dev-admin
+    HostName hddc-services-dev.v1003.molecularhealth.net
+    User devuser
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host services-dev
+    HostName hddc-services-dev.v1003.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host services-qa
+    HostName hddc-services-qa.v1002.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host services-qa-new
+    HostName hddc-services-qa.v2002.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host processing-qa-new
+    HostName hddc-processing-qa.v2002.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host sftp-qa-new
+    HostName hddc-sftp-qa.v2002.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host hana-qa-new
+    HostName hddc-hana2-qa.v2002.molecularhealth.net
+    User mhqadm
+    ProxyJump mhvpn
+Host staging-reporter-api
+    HostName hddc-services02-dev.v1003.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host qa-reporter-api
+    HostName hddc-services02-qa.v1002.molecularhealth.net
+    User services
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host buildserver
+    HostName buildserver-dev.molecularhealth.com
+    User jenkins
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host mhc
+    HostName hddc-hana2-dev4.v1003.molecularhealth.net
+    User mhcadm
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host mhf
+    HostName hddc-hana2-dev3.v1003.molecularhealth.net
+    User mhfadm
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host mhf-transfer
+    HostName hddc-hana2-dev3.v1003.molecularhealth.net
+    User hana-transfer
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host mhc-transfer
+    HostName hddc-hana2-dev3.v1003.molecularhealth.net
+    User hana-transfer
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
+Host vws
+    HostName hddc-vws-tvu.v1003.molecularhealth.net
+    User tvu
+    ProxyJump mhvpn
+    # report-generator
+    LocalForward 3000 127.0.0.1:3000
+    # order-portal
+    LocalForward 3200 127.0.0.1:3200
+    # reporter
+    LocalForward 4000 127.0.0.1:4000
+    # frontend-admin-portal
+    LocalForward 4200 127.0.0.1:4200
+    # frontend-connector
+    LocalForward 4201 127.0.0.1:4201
+    # frontend-report-customization
+    LocalForward 4202 127.0.0.1:4202
+    # user-service
+    LocalForward 3112 127.0.0.1:3112
+    # disease-service
+    LocalForward 3117 127.0.0.1:3117
+    # resource-service
+    LocalForward 3118 127.0.0.1:3118
+    # org-unit-service
+    LocalForward 3333 127.0.0.1:3333
+    # audit-service
+    LocalForward 3113 127.0.0.1:3113
+    # cases-service
+    LocalForward 3116 127.0.0.1:3116
+    # postgres-sql
+    LocalForward 5432 127.0.0.1:5432
+    # report-customization-application-service
+    LocalForward 3211 127.0.0.1:3211
+    # admin-portal-application-service
+    LocalForward 3111 127.0.0.1:3111
+    # report-customization-application-service
+    LocalForward 3105 127.0.0.1:3105
+    # guide-application-service
+    LocalForward 3104 127.0.0.1:3104
+    # misc-service
+    LocalForward 3300 127.0.0.1:3300
+    LocalForward 7779 127.0.0.1:7779
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    IdentityFile ~/.ssh/mh
