@@ -1,3 +1,7 @@
+Host git.molecularhealth.com
+    User tvu
+    ProxyJump mhvpn
+    IdentityFile ~/.ssh/mh
 Host utility
     HostName hddc-utility-content.v1013.molecularhealth.net
     User tvu
