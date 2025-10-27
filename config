@@ -1,3 +1,1 @@
-Include ~/.ssh/ssh_config/config.vpn
-Include ~/.ssh/ssh_config/config.personal
 Include ~/.ssh/ssh_config/config.work
