@@ -1,6 +1,15 @@
-Host git.molecularhealth.com
-    User tvu
-    IdentityFile ~/.ssh/mh
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+  IdentityFile ~/.ssh/mh
+Host sftp-dev-new
+  HostName hddc-sftp-dev.v2003.molecularhealth.net
+  User  services
+  IdentityFile ~/.ssh/mh
+Host tme-mhcv2
+  HostName hddc-processing-dev.v2003.molecularhealth.net
+  User services
+  IdentityFile ~/.ssh/mh
 Host utility
     HostName hddc-utility-content.v1013.molecularhealth.net
     User tvu
@@ -123,4 +132,7 @@ Host vws
     LocalForward 7779 127.0.0.1:7779
     ForwardX11 yes
     ForwardX11Trusted yes
+    IdentityFile ~/.ssh/mh
+Host git.molecularhealth.com
+    User tvu
     IdentityFile ~/.ssh/mh
